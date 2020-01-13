@@ -1,0 +1,13 @@
+body {background-color: #ce9a9a;}
+body .fas {color: #005000;}
+.bg-light {background-color: green!important;}
+.navbar-brand, .nav-item {color: #efbbbb!important;}
+.navbar-light .navbar-nav .nav-link {color: #efbbbb;}
+.jumbotron {background-color: #dba7a7;}
+.jumbotron .jumbotron {background-color: #efbbbb;}
+/*.jumbotron .jumbotron .jumbotron {background-color: red!important;}*/
+.row {text-align: center;}
+.col-lg-4, .col-lg-6 {margin: 20px 0px;}
+#search, #search:hover {background-color: #efbbbb; border-color: #efbbbb;}
+.btn-success, .btn-success:hover, .table .thead-dark th {background-color: green; border-color: green;}
+textarea.form-control {height: 200px;}
