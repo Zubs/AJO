@@ -11,13 +11,15 @@ class Router
 
 	// Set variables
 	public Request $request;
+	public Response $response;
 
 	// This array holds all the routes the application will have
 	protected array $routes = [];
 
-	function __construct(Request $request)
+	public function __construct(Request $request, Response $response)
 	{
 		$this->request = $request;
+		$this->response = $response;
 	}
 
 	function get($path, $callback)
@@ -55,6 +57,7 @@ class Router
 
 		// If the route is not found
 		if ($callback === false) {
+			$this->response->setStatusCode(404);
 			return '<h1 style="text-align: center; margin: 300px;">404 | Not Found</h1>';
 		}
 
