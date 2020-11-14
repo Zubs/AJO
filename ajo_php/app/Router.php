@@ -22,10 +22,16 @@ class Router
 		$this->response = $response;
 	}
 
-	function get($path, $callback)
+	public function get($path, $callback)
 	{
 		// Store the path and callback
 		$this->routes['get'][$path] = $callback;
+	}
+
+	public function post($path, $callback)
+	{
+		// Store the path and callback
+		$this->routes['post'][$path] = $callback;
 	}
 
 	protected function getLayout()
