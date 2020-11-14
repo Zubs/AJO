@@ -1,0 +1,1 @@
+<h1>Here I view stuff about a customer</h1>

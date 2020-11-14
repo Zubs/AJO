@@ -10,7 +10,7 @@
 			$email = $_POST['email'];
 			$password = $_POST['password'];
 
-			$conn = mysqli_connect('localhost', 'root', 'admin2019', 'ajo') or die('Unable to connect');
+			$conn = mysqli_connect('localhost', 'root', '', 'ajo') or die('Unable to connect');
 
 			$sql = "SELECT Fullname, Email, Password FROM admins WHERE Email = '$email'";
 
