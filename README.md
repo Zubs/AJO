@@ -1,4 +1,4 @@
-#  AJO
+<img src="ajo_php/public/images/default.png">
 
 This is to serve as a sofware solution to our every day thrift collection issue.
 
