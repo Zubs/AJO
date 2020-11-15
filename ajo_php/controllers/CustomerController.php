@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\App\Application;
+
 /**
  * Class CustomerController
  * 
@@ -17,12 +19,12 @@ class CustomerController
 
     public function show()
     {
-        // Code goes here
+        return Application::$App->router->render('user/single-customer');
     }
 
     public function create()
     {
-        // Code goes here
+        return Application::$App->router->render('user/new-customer');
     }
 
     public function store()

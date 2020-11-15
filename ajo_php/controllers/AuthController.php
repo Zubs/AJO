@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\App\Application;
+
 /**
  * Class AuthController
  * 
@@ -12,7 +14,7 @@ class AuthController
 {
     public function login()
     {
-        // Code goes here
+        return Application::$App->router->render('auth/login');
     }
 
     public function postLogin()
@@ -22,7 +24,7 @@ class AuthController
 
     public function register()
     {
-        // Code goes here
+        return Application::$App->router->render('auth/register');
     }
 
     public function postRegister()
@@ -37,7 +39,7 @@ class AuthController
 
     public function forgotPassword()
     {
-        // Code goes here
+        return Application::$App->router->render('auth/forgot-password');
     }
 
     public function postForgotPassword()

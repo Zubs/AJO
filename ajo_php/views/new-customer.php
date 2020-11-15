@@ -1,1 +1,0 @@
-<h1>Here I create a new customer</h1>

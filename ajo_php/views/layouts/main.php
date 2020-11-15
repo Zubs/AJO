@@ -9,8 +9,57 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <title>AJO</title>
+    <!-- Our colors are pink, hash, and blue -->
+    <style>
+        body {
+            font-family: cursive;
+        }
+
+        .bg-hash {
+            background: #f2f2f2;
+        }
+
+        .bg-pink {
+            background: pink;
+        }
+
+        .form-control {
+            border: none;
+            border-bottom: 1px solid #f2f2f2;
+            border-radius: 0px;
+            outline: none;
+        }
+
+        .btn-primary {
+            color: #f2f2f2;
+        }
+
+        .error-box {
+            height: 100%;
+            position: fixed;
+            width: 100%; 
+        }
+
+        .error-box .footer {
+            width: 100%;
+            left: 0px;
+            right: 0px; 
+        }
+
+        .error-body {
+            padding-top: 5%; 
+        }
+        
+        .error-body h1 {
+            font-size: 210px;
+            font-weight: 900;
+            text-shadow: 4px 4px 0 pink, 6px 6px 0 #263238;
+            line-height: 210px; 
+        }
+
+    </style>
   </head>
-  <body>
+  <body class="bg-hash">
     {{ content }}
 
     <!-- Optional JavaScript; choose one of the two! -->

@@ -55,6 +55,13 @@ class Router
 		return str_replace('{{ content }}', $view, $layout);
 	}
 
+	public function renderError()
+	{
+		$layout = $this->getLayout();
+		$view = $this->getView('default/404');
+		return str_replace('{{ content }}', $view, $layout);
+	}
+
 	function resolve()
 	{
 		$path = $this->request->getPath();
@@ -64,7 +71,7 @@ class Router
 		// If the route is not found
 		if ($callback === false) {
 			$this->response->setStatusCode(404);
-			return '<h1 style="text-align: center; margin: 300px;">404 | Not Found</h1>';
+			return $this->renderError();
 		}
 
 		// See if the route has a view

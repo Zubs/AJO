@@ -10,25 +10,23 @@
 						<div class="col-lg-6">
 							<div class="p-5">
 								<div class="text-center">
-									<h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
+									<h1 class="h4 text-gray-900 mb-4">Oops!</h1>
+									<p>We heard you lost your password! 😱</p>
 								</div>
 								<form action="/login" method="POST">
 									<div class="form-group">
 										<input type="email" class="form-control bg-pink" placeholder="Enter Email Address..." name="email">
 									</div>
 									<div class="form-group">
-										<input type="password" class="form-control bg-pink" placeholder="Password" name="password">
-									</div>
-									<div class="form-group">
-										<button class="btn btn-primary btn-block" type="submit">Login</button>
+										<button class="btn btn-primary btn-block" type="submit">Get Token</button>
 									</div>
 								</form>
 								<hr>
 								<div class="text-center">
-									<a href="/forgot-password" class="small">Forgot Password?</a>
+									<a href="/login" class="small">Remember Password?</a>
 								</div>
 								<div class="text-center">
-									<a href="/register" class="small">Create An Account</a>
+									<a href="/register" class="small">Don't Have An Account?</a>
 								</div>
 							</div>
 						</div>
