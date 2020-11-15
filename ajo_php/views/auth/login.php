@@ -5,7 +5,7 @@
 				<div class="card-body p-0">
 					<div class="row justify-content-center">
 						<div class="col-lg-6">
-							<img src="profile.png" alt="Testing the logo" width="100%" height="100%">
+							<img src="images/profile.png" alt="Testing the logo" width="100%" height="100%">
 						</div>
 						<div class="col-lg-6">
 							<div class="p-5">
